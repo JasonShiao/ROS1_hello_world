@@ -1,3 +1,6 @@
+# For a new VM instance, always run
+# sudo apt update
+
 # You should have created a workspace folder and enter it
 
 mkdir src
