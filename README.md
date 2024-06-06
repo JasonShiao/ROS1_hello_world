@@ -8,7 +8,7 @@ cd src
 catkin_init_workspace # Init by creating a CMakeLists.txt pointing to the toplevel.cmake stored in ROS1 install folder
 ```
 
-## Add/Fill packages
+## Add/Fill existing/third_party packages
 ```
 # From src/ dir
 cd src
@@ -41,4 +41,12 @@ Advanced packages typically require other packages to build or run
 # MUST have activated the workspace
 rosdep check <package name>
 rosdep install -i <package name>
+```
+
+## Create new package
+```
+# package should always be in the src/ directory
+cd src
+# Create your package and start develop ....
+catkin_create_pkg <your_package_name> [dependency1 dependency2 …]
 ```
