@@ -11,7 +11,7 @@ catkin_init_workspace # Init by creating a CMakeLists.txt pointing to the toplev
 ## Add/Fill packages
 ```
 # From src/ dir
-cd src/
+cd src
 git clone <package URL> <package_folder_name>
 # e.g git clone -b first_interaction https://github.com/udacity/RoboND-simple_arm/ simple_arm
 ```
@@ -19,7 +19,7 @@ git clone <package URL> <package_folder_name>
 ## Build and activate the catkin workspace
 ```
 # Build from the top level dir
-cd ..
+cd <top level dir>
 catkin_make
 # The build result will be 2 folders: build/, devel/
 
