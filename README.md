@@ -26,3 +26,10 @@ catkin_make
 # To use/activate the built catkin workspace
 source devel/setup.bash
 ```
+
+## Run with launch file
+> Launch files provide a convenient way to start complex systems of nodes, set parameters, and manage node configurations without having to run each component manually from the command line
+```
+# After you activate the workspace, you can launch
+roslaunch simple_arm robot_spawn.launch
+```
