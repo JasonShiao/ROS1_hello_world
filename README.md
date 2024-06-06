@@ -30,6 +30,15 @@ source devel/setup.bash
 ## Run with launch file
 > Launch files provide a convenient way to start complex systems of nodes, set parameters, and manage node configurations without having to run each component manually from the command line
 ```
-# After you activate the workspace, you can launch
+# MUST have activated the workspace
 roslaunch simple_arm robot_spawn.launch
+```
+
+
+## Resolve dependencies with rosdep
+Advanced packages typically require other packages to build or run
+```
+# MUST have activated the workspace
+rosdep check <package name>
+rosdep install -i <package name>
 ```
